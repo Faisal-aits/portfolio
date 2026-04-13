@@ -1,0 +1,120 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Faisal Sajid Khan - Portfolio</title>  <!-- React CDN -->  <script src="https://unpkg.com/react@18/umd/react.development.js"></script>  <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f7fa;
+      color: #333;
+    }
+    header {
+      background: #0a66c2;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    section {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .card {
+      background: white;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #0a66c2;
+    }
+    a {
+      color: #0a66c2;
+      text-decoration: none;
+    }
+    .skills span {
+      display: inline-block;
+      background: #e3f2fd;
+      margin: 5px;
+      padding: 5px 10px;
+      border-radius: 5px;
+    }
+  </style></head>
+<body>
+  <div id="root"></div>  <script type="text/babel">
+    function App() {
+      return (
+        <div>
+          <header>
+            <h1>Faisal Sajid Khan</h1>
+            <p>Full Stack Developer & Cloud Engineer</p>
+          </header>
+
+          <section>
+            <h2>About Me</h2>
+            <div className="card">
+              <p>
+                Highly skilled AWS Full Stack Developer with 1+ years of experience designing,
+                building, and deploying scalable web applications.
+              </p>
+            </div>
+
+            <h2>Skills</h2>
+            <div className="card skills">
+              <span>React</span>
+              <span>Node.js</span>
+              <span>AWS</span>
+              <span>DevOps</span>
+              <span>Python</span>
+              <span>Java</span>
+              <span>MySQL</span>
+            </div>
+
+            <h2>Projects</h2>
+
+            <div className="card">
+              <h3>Edunovaa</h3>
+              <p>School Management System with admin, teacher, and student login.</p>
+              <p><b>Tech:</b> React, React Native, Django, MySQL, AWS</p>
+              <a href="https://github.com/Faisal-sajid-Khan?tab=repositories" target="_blank">GitHub</a>
+            </div>
+
+            <div className="card">
+              <h3>Work Desk</h3>
+              <p>Employee Management System with admin and employee login.</p>
+              <p><b>Tech:</b> React, React Native, Node.js, MySQL, AWS</p>
+              <a href="https://github.com/Faisal-sajid-Khan?tab=repositories" target="_blank">GitHub</a>
+            </div>
+
+            <h2>Experience</h2>
+            <div className="card">
+              <p><b>Role:</b> Full Stack Developer & AWS DevOps</p>
+              <p><b>Duration:</b> 12 months</p>
+            </div>
+
+            <h2>Education</h2>
+            <div className="card">
+              <p>MSc Computer Science</p>
+              <p>B.P.H.E Society Ahmednagar College</p>
+            </div>
+
+            <h2>Contact</h2>
+            <div className="card">
+              <p>Email: faisalwork808@gmail.com</p>
+              <p>
+                <a href="https://www.linkedin.com/in/faisal-sajid-khan-3419aa351" target="_blank">LinkedIn</a>
+              </p>
+              <p>
+                <a href="https://github.com/Faisal-sajid-Khan?tab=repositories" target="_blank">GitHub</a>
+              </p>
+            </div>
+          </section>
+        </div>
+      );
+    }
+
+    ReactDOM.createRoot(document.getElementById('root')).render(<App />);
+  </script></body>
+</html>
